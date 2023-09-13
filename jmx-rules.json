@@ -1,0 +1,4147 @@
+{
+  "controllerUrl" : "https://x.saas.appdynamics.com",
+  "applicationId" : 11393,
+  "tierId" : null,
+  "user" : "bob.ho2@appdynamics.com",
+  "createdDate" : [ "java.util.Date", 1694627439446 ],
+  "entityType" : "jmx-rules",
+  "entities" : [ "java.util.Arrays$ArrayList", [ [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90905,
+    "version" : 0,
+    "name" : "Abnormal Disconnects",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90905,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "Abnormal Disconnects",
+      "description" : "Abnormal Disconnects",
+      "enabled" : true,
+      "children" : [ ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90509,
+    "version" : 0,
+    "name" : "ActiveMQ",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90509,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "ActiveMQ",
+      "description" : "Default Config",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 452537,
+        "version" : 0,
+        "jmxCollectionId" : 90509,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "ActiveMQ_Brokers",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Broker",
+        "mbeanQuery" : {
+          "domain" : "org.apache.activemq",
+          "mbeanPattern" : "org.apache.activemq:Type=Broker,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "BrokerName",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "TotalEnqueueCount",
+          "metricName" : "Total Enqueue Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TotalDequeueCount",
+          "metricName" : "Total Dequeue Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TotalConsumerCount",
+          "metricName" : "Total Consumer Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TotalMessageCount",
+          "metricName" : "Total Message Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "MemoryPercentUsage",
+          "metricName" : "Memory Percent Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "StorePercentUsage",
+          "metricName" : "Store Percent Usage",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452538,
+        "version" : 0,
+        "jmxCollectionId" : 90509,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "ActiveMQ_Queues",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Queues",
+        "mbeanQuery" : {
+          "domain" : "org.apache.activemq",
+          "mbeanPattern" : "org.apache.activemq:Type=Queue,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "Destination",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "QueueSize",
+          "metricName" : "Queue Size",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "EnqueueCount",
+          "metricName" : "Enqueue Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "DequeueCount",
+          "metricName" : "Dequeue Size",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "MemoryPercentUsage",
+          "metricName" : "Memory Percent Usage",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "ConsumerCount",
+          "metricName" : "Consumer Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "ProducerCount",
+          "metricName" : "Producer Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "AverageEnqueueTime",
+          "metricName" : "Average Enqueue Time",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452539,
+        "version" : 0,
+        "jmxCollectionId" : 90509,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "ActiveMQ_Topics",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Topics",
+        "mbeanQuery" : {
+          "domain" : "org.apache.activemq",
+          "mbeanPattern" : "org.apache.activemq:Type=Topic,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "Destination",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "QueueSize",
+          "metricName" : "Queue Size",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "EnqueueCount",
+          "metricName" : "Enqueue Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "DequeueCount",
+          "metricName" : "Dequeue Size",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "MemoryPercentUsage",
+          "metricName" : "Memory Percent Usage",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "ConsumerCount",
+          "metricName" : "Consumer Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "ProducerCount",
+          "metricName" : "Producer Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "AverageEnqueueTime",
+          "metricName" : "Average Enqueue Time",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90510,
+    "version" : 0,
+    "name" : "Cassandra",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90510,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "Cassandra",
+      "description" : "Default Config",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 452540,
+        "version" : 0,
+        "jmxCollectionId" : 90510,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Cassandra_Caches",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "HintsColumnFamilyRowCache",
+        "mbeanQuery" : {
+          "domain" : "org.apache.cassandra.db",
+          "mbeanPattern" : "org.apache.cassandra.db:cache=HintsColumnFamilyRowCache,keyspace=system,type=Caches",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "Size",
+          "metricName" : "Size",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "Capacity",
+          "metricName" : "Capacity",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "Requests",
+          "metricName" : "Requests",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "Hits",
+          "metricName" : "Hits",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RecentHitRate",
+          "metricName" : "RecentHitRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452541,
+        "version" : 0,
+        "jmxCollectionId" : 90510,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Cassandra_GossipStage",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "GossipStage",
+        "mbeanQuery" : {
+          "domain" : "org.apache.cassandra.internal",
+          "mbeanPattern" : "org.apache.cassandra.internal:type=GossipStage",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "ActiveCount",
+          "metricName" : "ActiveCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "CompletedTasks",
+          "metricName" : "CompletedTasks",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "PendingTasks",
+          "metricName" : "PendingTasks",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452542,
+        "version" : 0,
+        "jmxCollectionId" : 90510,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Cassandra_FailureDetector",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "FailureDetector",
+        "mbeanQuery" : {
+          "domain" : "org.apache.cassandra.net",
+          "mbeanPattern" : "org.apache.cassandra.net:type=FailureDetector",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "PhiConvictThreshold",
+          "metricName" : "PhiConvictThreshold",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "AllEndpointStates",
+          "metricName" : "AllEndpointStates",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452543,
+        "version" : 0,
+        "jmxCollectionId" : 90510,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Cassandra_ReadStage",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "ReadStage",
+        "mbeanQuery" : {
+          "domain" : "org.apache.cassandra.request",
+          "mbeanPattern" : "org.apache.cassandra.request:type=ReadStage",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "CorePoolSize",
+          "metricName" : "CorePoolSize",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "ActiveCount",
+          "metricName" : "ActiveCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "CompletedTasks",
+          "metricName" : "CompletedTasks",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "PendingTasks",
+          "metricName" : "PendingTasks",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452544,
+        "version" : 0,
+        "jmxCollectionId" : 90510,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Cassandra_CompactionManager",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "CompactionManager",
+        "mbeanQuery" : {
+          "domain" : "org.apache.cassandra.db",
+          "mbeanPattern" : "org.apache.cassandra.db:type=CompactionManager",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "PendingTasks",
+          "metricName" : "PendingTasks",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "CompletedTasks",
+          "metricName" : "CompletedTasks",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452545,
+        "version" : 0,
+        "jmxCollectionId" : 90510,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Cassandra_StorageProxy",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "StorageProxy",
+        "mbeanQuery" : {
+          "domain" : "org.apache.cassandra.db",
+          "mbeanPattern" : "org.apache.cassandra.db:type=StorageProxy",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "RecentReadLatencyMicros",
+          "metricName" : "RecentReadLatencyMicros",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RecentWriteLatencyMicros",
+          "metricName" : "RecentWriteLatencyMicros",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RecentRangeLatencyMicros",
+          "metricName" : "RecentRangeLatencyMicros",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90511,
+    "version" : 0,
+    "name" : "Coherence",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90511,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "Coherence",
+      "description" : "Default Config",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 452546,
+        "version" : 0,
+        "jmxCollectionId" : 90511,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Coherence_Caches",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Coherence|Cache Maps",
+        "mbeanQuery" : {
+          "domain" : "Coherence",
+          "mbeanPattern" : "Coherence:type=Cache,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "service,name,nodeId",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "CacheHits",
+          "metricName" : "CacheHits",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "CacheHitsMillis",
+          "metricName" : "CacheHitsMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "AverageHitMillis",
+          "metricName" : "AverageHitMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "CacheMisses",
+          "metricName" : "CacheMisses",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "CacheMissesMillis",
+          "metricName" : "CacheMissesMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "AverageMissMillis",
+          "metricName" : "AverageMissMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "CachePrunes",
+          "metricName" : "CachePrunes",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "CachePrunesMillis",
+          "metricName" : "CachePrunesMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TotalGets",
+          "metricName" : "TotalGets",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TotalGetsMillis",
+          "metricName" : "TotalGetsMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "AverageGetMillis",
+          "metricName" : "AverageGetMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TotalPuts",
+          "metricName" : "TotalPuts",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TotalPutsMillis",
+          "metricName" : "TotalPutsMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "AveragePutMillis",
+          "metricName" : "AveragePutMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "StoreReads",
+          "metricName" : "StoreReads",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "StoreReadMillis",
+          "metricName" : "StoreReadMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "StoreAverageReadMillis",
+          "metricName" : "StoreAverageReadMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "StoreWrites",
+          "metricName" : "StoreWrites",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "StoreWriteMillis",
+          "metricName" : "StoreWriteMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "StoreAverageWriteMillis",
+          "metricName" : "StoreAverageWriteMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "StoreFailures",
+          "metricName" : "StoreFailures",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "StoreAverageBatchSize",
+          "metricName" : "StoreAverageBatchSize",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "Size",
+          "metricName" : "Size",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452547,
+        "version" : 0,
+        "jmxCollectionId" : 90511,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Coherence_Cluster",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Coherence|Cluster",
+        "mbeanQuery" : {
+          "domain" : "Coherence",
+          "mbeanPattern" : "Coherence:type=Cluster",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "ClusterSize",
+          "metricName" : "Cluster Size",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "MembersDepartureCount",
+          "metricName" : "Members Departure Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452548,
+        "version" : 0,
+        "jmxCollectionId" : 90511,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Coherence_Management",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Coherence|Management",
+        "mbeanQuery" : {
+          "domain" : "Coherence",
+          "mbeanPattern" : "Coherence:type=Management",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "RefreshCount",
+          "metricName" : "RefreshCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RefreshTimeoutCount",
+          "metricName" : "RefreshTimeoutCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452549,
+        "version" : 0,
+        "jmxCollectionId" : 90511,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Coherence_Reporter",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Coherence|Reporter",
+        "mbeanQuery" : {
+          "domain" : "Coherence",
+          "mbeanPattern" : "Coherence:type=Reporter,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "nodeId",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "RunMaxMillis",
+          "metricName" : "RunMaxMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RunLastMillis",
+          "metricName" : "RunLastMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RunAverageMillis",
+          "metricName" : "RunAverageMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452550,
+        "version" : 0,
+        "jmxCollectionId" : 90511,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Coherence_Nodes",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Coherence|Grid Nodes",
+        "mbeanQuery" : {
+          "domain" : "Coherence",
+          "mbeanPattern" : "Coherence:type=Node,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "nodeId",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "PacketsSent",
+          "metricName" : "PacketsSent",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "PacketsReceived",
+          "metricName" : "PacketsReceived",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "PacketsBundled",
+          "metricName" : "PacketsBundled",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "PacketsResent",
+          "metricName" : "PacketsResent",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "PacketsResentEarly",
+          "metricName" : "PacketsResentEarly",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "PacketsResentExcess",
+          "metricName" : "PacketsResentExcess",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "PacketsRepeated",
+          "metricName" : "PacketsRepeated",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452551,
+        "version" : 0,
+        "jmxCollectionId" : 90511,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Coherence_Services",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Coherence|Services",
+        "mbeanQuery" : {
+          "domain" : "Coherence",
+          "mbeanPattern" : "Coherence:type=Service,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "name,nodeId",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "RequestTimeoutCount",
+          "metricName" : "RequestTimeoutCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RequestTimeoutMillis",
+          "metricName" : "RequestTimeoutMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RequestPendingCount",
+          "metricName" : "RequestPendingCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RequestPendingDuration",
+          "metricName" : "RequestPendingDuration",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RequestMaxDuration",
+          "metricName" : "RequestMaxDuration",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RequestAverageDuration",
+          "metricName" : "RequestAverageDuration",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RequestTotalCount",
+          "metricName" : "RequestTotalCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TaskCount",
+          "metricName" : "TaskCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TaskAverageDuration",
+          "metricName" : "TaskAverageDuration",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TaskBacklog",
+          "metricName" : "TaskBacklog",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TaskMaxBacklog",
+          "metricName" : "TaskMaxBacklog",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TaskHungCount",
+          "metricName" : "TaskHungCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TaskHungDuration",
+          "metricName" : "TaskHungDuration",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TaskHungThresholdMillis",
+          "metricName" : "TaskHungThresholdMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TaskTimeoutCount",
+          "metricName" : "TaskTimeoutCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "TaskTimeoutMillis",
+          "metricName" : "TaskTimeoutMillis",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "BackupCount",
+          "metricName" : "BackupCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "BackupCountAfterWritebehind",
+          "metricName" : "BackupCountAfterWritebehind",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "StorageEnabledCount",
+          "metricName" : "StorageEnabledCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "ThreadCount",
+          "metricName" : "ThreadCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "ThreadIdleCount",
+          "metricName" : "ThreadIdleCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "ThreadAbandonedCount",
+          "metricName" : "ThreadAbandonedCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "ThreadAverageActiveCount",
+          "metricName" : "ThreadAverageActiveCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452552,
+        "version" : 0,
+        "jmxCollectionId" : 90511,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Coherence_StorageManager",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Coherence|Storage Manager",
+        "mbeanQuery" : {
+          "domain" : "Coherence",
+          "mbeanPattern" : "Coherence:type=StorageManager,nodeId=1,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "service,cache",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "EvictionCount",
+          "metricName" : "EvictionCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "LocksPending",
+          "metricName" : "LocksPending",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "InsertCount",
+          "metricName" : "InsertCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RemoveCount",
+          "metricName" : "RemoveCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "LocksGranted",
+          "metricName" : "LocksGranted",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90906,
+    "version" : 0,
+    "name" : "FinesseMetrics",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90906,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "FinesseMetrics",
+      "description" : "FinesseMetrics",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 454517,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "RequestLongestTime",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=WebAppStats,component0=AggregateWebappStats",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "RequestLongestTime",
+          "metricName" : "RequestLongestTime",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454518,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "TasksQueued",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=AWSSubsystem,component0=CommandDispatcher",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "TasksQueued",
+          "metricName" : "TasksQueued",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454519,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "TotalCallsInSystem",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=AWSSubsystem,component0=AWS Statistics Counter",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "TotalCallsInSystem",
+          "metricName" : "TotalCallsInSystem",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454520,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "AverageProcessingTime",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=AWSSubsystem,component0=CTIMesssage Statistics Counter",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "AverageProcessingTime",
+          "metricName" : "AverageProcessingTime",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454521,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "RunnablesQueued",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=AWSSubsystem,component0=CommandDispatcher",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "RunnablesQueued",
+          "metricName" : "RunnablesQueued",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454522,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "NumOfActiveAgentsLoggedIn",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=AWSSubsystem,component0=AWS Statistics Counter",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "NumOfActiveAgentsLoggedIn",
+          "metricName" : "NumOfActiveAgentsLoggedIn",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454523,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "NumOfAgentsLoggedIn",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=AWSSubsystem,component0=AWS Statistics Counter",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "NumOfAgentsLoggedIn",
+          "metricName" : "NumOfAgentsLoggedIn",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454524,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "ThreadCount - Application Parameter",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "java.lang",
+          "mbeanPattern" : "java.lang:type=Threading",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "ThreadCount",
+          "metricName" : "ThreadCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454525,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "PeakThreadCount - Application Parameter",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "java.lang",
+          "mbeanPattern" : "java.lang:type=Threading",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "PeakThreadCount",
+          "metricName" : "PeakThreadCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454526,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "currentThreadCount",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "Catalina",
+          "mbeanPattern" : "Catalina:type=ThreadPool,name=\"http-apr-127.0.0.1-8082\"",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "currentThreadCount",
+          "metricName" : "currentThreadCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454527,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "currentThreadsBusy",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "Catalina",
+          "mbeanPattern" : "Catalina:type=ThreadPool,name=\"http-apr-127.0.0.1-8082\"",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "currentThreadsBusy",
+          "metricName" : "currentThreadsBusy",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454528,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "ProcessCpuLoad - Application Parameter",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "java.lang",
+          "mbeanPattern" : "java.lang:type=OperatingSystem",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "ProcessCpuLoad",
+          "metricName" : "ProcessCpuLoad",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454529,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "ExecutingTaskCount",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Openfire-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu.finesse.openfire",
+          "mbeanPattern" : "com.cisco.ccbu.finesse.openfire:type=PubSubOrderedExecutorStatistics",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "ExecutingTaskCount",
+          "metricName" : "ExecutingTaskCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454530,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "QueuedTaskCount",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Openfire-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu.finesse.openfire",
+          "mbeanPattern" : "com.cisco.ccbu.finesse.openfire:type=PubSubOrderedExecutorStatistics",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "QueuedTaskCount",
+          "metricName" : "QueuedTaskCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454531,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "ThreadCount - Openfire Parameter",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Openfire-Metrics",
+        "mbeanQuery" : {
+          "domain" : "java.lang",
+          "mbeanPattern" : "java.lang:type=Threading",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "ThreadCount",
+          "metricName" : "ThreadCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454532,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "PeakThreadCount - Openfire Parameter",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Openfire-Metrics",
+        "mbeanQuery" : {
+          "domain" : "java.lang",
+          "mbeanPattern" : "java.lang:type=Threading",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "PeakThreadCount",
+          "metricName" : "PeakThreadCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454533,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "ProcessCpuLoad - Openfire Parameter",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Openfire-Metrics",
+        "mbeanQuery" : {
+          "domain" : "java.lang",
+          "mbeanPattern" : "java.lang:type=OperatingSystem",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "ProcessCpuLoad",
+          "metricName" : "ProcessCpuLoad",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 454534,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "IntervalLoginOperations",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=LoginStats,component0=LoginStats-webservices",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "null",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "IntervalLoginOperations",
+          "metricName" : "IntervalLoginOperations",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 523087,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "DroppedCallsInterval",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=AWSSubsystem,component0=AWS Statistics Counter",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "DroppedCallsInterval",
+          "metricName" : "DroppedCallsInterval",
+          "getterChain" : "",
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 523088,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "DroppedCallsTotal",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=AWSSubsystem,component0=AWS Statistics Counter",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "DroppedCallsTotal",
+          "metricName" : "DroppedCallsTotal",
+          "getterChain" : "",
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 523089,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "ActiveCallsInterval",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=AWSSubsystem,component0=AWS Statistics Counter",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "ActiveCallsInterval",
+          "metricName" : "ActiveCallsInterval",
+          "getterChain" : "",
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 523090,
+        "version" : 0,
+        "jmxCollectionId" : 90906,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "ActiveCallsTotal",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Finesse-Desktop-Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=AWSSubsystem,component0=AWS Statistics Counter",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "ActiveCallsTotal",
+          "metricName" : "ActiveCallsTotal",
+          "getterChain" : "",
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90512,
+    "version" : 0,
+    "name" : "Glassfish",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90512,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "Glassfish",
+      "description" : "Default Config",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 452553,
+        "version" : 0,
+        "jmxCollectionId" : 90512,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Glassfish_GlobalRequestProcessor",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Web Container Runtime",
+        "mbeanQuery" : {
+          "domain" : "com.sun.appserv",
+          "mbeanPattern" : "com.sun.appserv:type=GlobalRequestProcessor,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "requestCount",
+          "metricName" : "Request Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "errorCount",
+          "metricName" : "Error Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "bytesSent",
+          "metricName" : "Total Bytes Sent",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "bytesReceived",
+          "metricName" : "Total Bytes Received",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452554,
+        "version" : 0,
+        "jmxCollectionId" : 90512,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Glassfish_AMX_WebRequest_Mon",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Web Container Runtime",
+        "mbeanQuery" : {
+          "domain" : "amx",
+          "mbeanPattern" : "amx:type=web-request-mon,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "requestcount",
+          "metricName" : "Request Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "errorcount",
+          "metricName" : "Error Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452555,
+        "version" : 0,
+        "jmxCollectionId" : 90512,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Glassfish_AMX_JDBCConnectionPool_Mon",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "JDBC Connection Pools",
+        "mbeanQuery" : {
+          "domain" : "amx",
+          "mbeanPattern" : "amx:type=jdbc-connection-pool-mon,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "numconnused",
+          "metricName" : "Connections In Use",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "numpotentialconnleak",
+          "metricName" : "Potential Leaks",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "averageconnwaittime",
+          "metricName" : "Average Connection Wait Time",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "waitqueuelength",
+          "metricName" : "Current Wait Queue Length",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90513,
+    "version" : 0,
+    "name" : "HornetQ",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90513,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "HornetQ",
+      "description" : "Default Config",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 452556,
+        "version" : 0,
+        "jmxCollectionId" : 90513,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "HornetQ_Queues",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Queues",
+        "mbeanQuery" : {
+          "domain" : "org.hornetq",
+          "mbeanPattern" : "org.hornetq:module=JMS,type=Queue,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "ConsumerCount",
+          "metricName" : "ConsumerCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "MessageCount",
+          "metricName" : "MessageCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "MessagesAdded",
+          "metricName" : "MessagesAdded",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90514,
+    "version" : 0,
+    "name" : "JBoss",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90514,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "JBoss",
+      "description" : "Default Config",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 452557,
+        "version" : 0,
+        "jmxCollectionId" : 90514,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "JBoss_WebThreadPool",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Web Container Runtime",
+        "mbeanQuery" : {
+          "domain" : "jboss.web",
+          "mbeanPattern" : "jboss.web:type=ThreadPool,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "currentThreadsBusy",
+          "metricName" : "Current Busy Threads",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "currentThreadCount",
+          "metricName" : "Current Threads",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "maxThreads",
+          "metricName" : "Maximum Threads",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452558,
+        "version" : 0,
+        "jmxCollectionId" : 90514,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "JBoss_GlobalRequestProcessor",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Web Container Runtime",
+        "mbeanQuery" : {
+          "domain" : "jboss.web",
+          "mbeanPattern" : "jboss.web:type=GlobalRequestProcessor,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "requestCount",
+          "metricName" : "Request Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION_FOREVERINCREASING"
+        }, {
+          "mbeanAttributeName" : "errorCount",
+          "metricName" : "Error Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452559,
+        "version" : 0,
+        "jmxCollectionId" : 90514,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "JBoss_JDBCConnectionPools",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "JDBC Connection Pools",
+        "mbeanQuery" : {
+          "domain" : "jboss.jca",
+          "mbeanPattern" : "jboss.jca:service=ManagedConnectionPool,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "MaxConnectionsInUseCount",
+          "metricName" : "Maximum Active",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "InUseConnectionCount",
+          "metricName" : "Active Connections",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "MaxSize",
+          "metricName" : "Maximum Connections",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452560,
+        "version" : 0,
+        "jmxCollectionId" : 90514,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "JBoss_Sessions",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Sessions",
+        "mbeanQuery" : {
+          "domain" : "jboss.web",
+          "mbeanPattern" : "jboss.web:type=Manager,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "path",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "sessionMaxAliveTime",
+          "metricName" : "sessionMaxAliveTime",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "activeSessions",
+          "metricName" : "activeSessions",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "sessionCounter",
+          "metricName" : "sessionCounter",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "sessionAverageAliveTime",
+          "metricName" : "sessionAverageAliveTime",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "processingTime",
+          "metricName" : "processingTime",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "maxActive",
+          "metricName" : "maxActive",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "expiredSessions",
+          "metricName" : "expiredSessions",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "rejectedSessions",
+          "metricName" : "rejectedSessions",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452561,
+        "version" : 0,
+        "jmxCollectionId" : 90514,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "JBoss_EJBPools",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "EJB Pools",
+        "mbeanQuery" : {
+          "domain" : "jboss.j2ee",
+          "mbeanPattern" : "jboss.j2ee:service=EJB,plugin=pool,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "jndiName",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "CurrentSize",
+          "metricName" : "Active Beans",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "MaxSize",
+          "metricName" : "Maximum Beans",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90520,
+    "version" : 0,
+    "name" : "Kafka",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90520,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "Kafka",
+      "description" : "Default Config",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 452574,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Kafka_Producer",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "ProducerMetrics",
+        "mbeanQuery" : {
+          "domain" : "kafka.producer",
+          "mbeanPattern" : "kafka.producer:type=producer-metrics,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "client-id",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "response-rate",
+          "metricName" : "Response Rate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "request-rate",
+          "metricName" : "Request Rate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "request-latency-avg",
+          "metricName" : "Average Request Latency",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "outgoing-byte-rate",
+          "metricName" : "Outgoing Byte Rate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "io-wait-time-ns-avg",
+          "metricName" : "Average IO Wait",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "record-error-rate",
+          "metricName" : "Record Error Rate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "waiting-threads",
+          "metricName" : "Waiting Threads",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "requests-in-flight",
+          "metricName" : "Requests in Flight",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "network-io-rate",
+          "metricName" : "Network IO Rate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452575,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Kafka_Consumer",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "ConsumerMetrics",
+        "mbeanQuery" : {
+          "domain" : "kafka.consumer",
+          "mbeanPattern" : "kafka.consumer:type=consumer-fetch-manager-metrics,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "client-id",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "records-lag-max",
+          "metricName" : "Max Records Lag",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "bytes-consumed-rate",
+          "metricName" : "Bytes Consumption Rate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "fetch-rate",
+          "metricName" : "Fetch Rate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "records-consumed-rate",
+          "metricName" : "Records Consumption Rate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "fetch-latency-max",
+          "metricName" : "Max Fetch Latency",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452576,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_IsrExpandRate",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-isr-expand-rate",
+        "mbeanQuery" : {
+          "domain" : "kafka.server",
+          "mbeanPattern" : "kafka.server:type=ReplicaManager,name=IsrExpandsPerSec",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "OneMinuteRate",
+          "metricName" : "OneMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "FiveMinuteRate",
+          "metricName" : "FiveMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "FifteenMinuteRate",
+          "metricName" : "FifteenMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "MeanRate",
+          "metricName" : "MeanRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "Count",
+          "metricName" : "Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        } ]
+      }, {
+        "id" : 452577,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_IsrShrinkRate",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-isr-shrink-rate",
+        "mbeanQuery" : {
+          "domain" : "kafka.server",
+          "mbeanPattern" : "kafka.server:type=ReplicaManager,name=IsrShrinksPerSec",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "OneMinuteRate",
+          "metricName" : "OneMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "FiveMinuteRate",
+          "metricName" : "FiveMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "FifteenMinuteRate",
+          "metricName" : "FifteenMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "MeanRate",
+          "metricName" : "MeanRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "Count",
+          "metricName" : "Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        } ]
+      }, {
+        "id" : 452578,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_UnderReplicatedPartitions",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-under-replicated-partitions",
+        "mbeanQuery" : {
+          "domain" : "kafka.server",
+          "mbeanPattern" : "kafka.server:type=ReplicaManager,name=UnderReplicatedPartitions",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "Value",
+          "metricName" : "Value",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452579,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_PartitionsCount",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-partition-count",
+        "mbeanQuery" : {
+          "domain" : "kafka.server",
+          "mbeanPattern" : "kafka.server:type=ReplicaManager,name=PartitionCount",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "Value",
+          "metricName" : "Value",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452580,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_LeadersCount",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-leader-count",
+        "mbeanQuery" : {
+          "domain" : "kafka.server",
+          "mbeanPattern" : "kafka.server:type=ReplicaManager,name=LeaderCount",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "Value",
+          "metricName" : "Value",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452581,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_ActiveControllers",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-active-controllers",
+        "mbeanQuery" : {
+          "domain" : "kafka.controller",
+          "mbeanPattern" : "kafka.controller:type=KafkaController,name=ActiveControllerCount",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "Value",
+          "metricName" : "Value",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452582,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_OfflinePartitions",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-offline-partitions",
+        "mbeanQuery" : {
+          "domain" : "kafka.controller",
+          "mbeanPattern" : "kafka.controller:type=KafkaController,name=OfflinePartitionsCount",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "Value",
+          "metricName" : "Value",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452583,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_LeaderElectionRateAndTime",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-leader-election-rate-and-time-ms",
+        "mbeanQuery" : {
+          "domain" : "kafka.controller",
+          "mbeanPattern" : "kafka.controller:type=ControllerStats,name=LeaderElectionRateAndTimeMs",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "99thPercentile",
+          "metricName" : "99thPercentile",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "Mean",
+          "metricName" : "Mean",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "OneMinuteRate",
+          "metricName" : "OneMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452584,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_UncleanLeaderElectionRate",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-unclean-leader-election-rate",
+        "mbeanQuery" : {
+          "domain" : "kafka.controller",
+          "mbeanPattern" : "kafka.controller:type=ControllerStats,name=UncleanLeaderElectionsPerSec",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "99thPercentile",
+          "metricName" : "99thPercentile",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "Mean",
+          "metricName" : "Mean",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "OneMinuteRate",
+          "metricName" : "OneMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452585,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_BytesInPerSec",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-bytes-in-per-sec",
+        "mbeanQuery" : {
+          "domain" : "kafka.server",
+          "mbeanPattern" : "kafka.server:type=BrokerTopicMetrics,name=BytesInPerSec",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "OneMinuteRate",
+          "metricName" : "OneMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "FiveMinuteRate",
+          "metricName" : "FiveMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "FifteenMinuteRate",
+          "metricName" : "FifteenMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "MeanRate",
+          "metricName" : "MeanRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "Count",
+          "metricName" : "Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        } ]
+      }, {
+        "id" : 452586,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_BytesOutPerSec",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-bytes-out-per-sec",
+        "mbeanQuery" : {
+          "domain" : "kafka.server",
+          "mbeanPattern" : "kafka.server:type=BrokerTopicMetrics,name=BytesOutPerSec",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "OneMinuteRate",
+          "metricName" : "OneMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "FiveMinuteRate",
+          "metricName" : "FiveMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "FifteenMinuteRate",
+          "metricName" : "FifteenMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "MeanRate",
+          "metricName" : "MeanRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "Count",
+          "metricName" : "Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        } ]
+      }, {
+        "id" : 452587,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_TotalRequestTimeMS",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-request-total-time-ms",
+        "mbeanQuery" : {
+          "domain" : "kafka.network",
+          "mbeanPattern" : "kafka.network:type=RequestMetrics,name=TotalTimeMs,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "request",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "99thPercentile",
+          "metricName" : "99thPercentile",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452588,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_RequestWaitTimeInQueueMS",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-request-queue-time-ms",
+        "mbeanQuery" : {
+          "domain" : "kafka.network",
+          "mbeanPattern" : "kafka.network:type=RequestMetrics,name=RequestQueueTimeMs,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "request",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "99thPercentile",
+          "metricName" : "99thPercentile",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452589,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_RequestTimeSpentInProcessingMS",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-request-processing-ms",
+        "mbeanQuery" : {
+          "domain" : "kafka.network",
+          "mbeanPattern" : "kafka.network:type=RequestMetrics,name=LocalTimeMs,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "request",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "99thPercentile",
+          "metricName" : "99thPercentile",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452590,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_RequestWaitTimeForFollowerMS",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-request-remote-time-ms",
+        "mbeanQuery" : {
+          "domain" : "kafka.network",
+          "mbeanPattern" : "kafka.network:type=RequestMetrics,name=RemoteTimeMs,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "request",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "99thPercentile",
+          "metricName" : "99thPercentile",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452591,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_TimeSpentInResponseQueueMS",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-request-response-queue-ms",
+        "mbeanQuery" : {
+          "domain" : "kafka.network",
+          "mbeanPattern" : "kafka.network:type=RequestMetrics,name=ResponseQueueTimeMs,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "request",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "99thPercentile",
+          "metricName" : "99thPercentile",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452592,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_TimeSpentInSendingResponseMS",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-request-send-response-ms",
+        "mbeanQuery" : {
+          "domain" : "kafka.network",
+          "mbeanPattern" : "kafka.network:type=RequestMetrics,name=ResponseSendTimeMs,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "request",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "99thPercentile",
+          "metricName" : "99thPercentile",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452593,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_MaxLagBetweenLeaderAndFollower",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-leader-follower-lag",
+        "mbeanQuery" : {
+          "domain" : "kafka.server",
+          "mbeanPattern" : "kafka.server:type=ReplicaFetcherManager,name=MaxLag,clientId=Replica",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "Value",
+          "metricName" : "Value",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452594,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_PercentageTimeNetworkProcessorIdle",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-network-processor-avg-idle-percent",
+        "mbeanQuery" : {
+          "domain" : "kafka.network",
+          "mbeanPattern" : "kafka.network:type=SocketServer,name=NetworkProcessorAvgIdlePercent",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "Value",
+          "metricName" : "Value",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452595,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_PercentageTimeRequestHandlerIdle",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-request-handler-idle-percent",
+        "mbeanQuery" : {
+          "domain" : "kafka.server",
+          "mbeanPattern" : "kafka.server:type=KafkaRequestHandlerPool,name=RequestHandlerAvgIdlePercent",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "MeanRate",
+          "metricName" : "MeanRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "OneMinuteRate",
+          "metricName" : "OneMinuteRate",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452596,
+        "version" : 0,
+        "jmxCollectionId" : 90520,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "KafkaBroker_ProcessorIdlePercent",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "broker-network-processor-idle-percent",
+        "mbeanQuery" : {
+          "domain" : "kafka.network",
+          "mbeanPattern" : "kafka.network:type=Processor,name=IdlePercent,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "networkProcessor",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "Value",
+          "metricName" : "Value",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90515,
+    "version" : 0,
+    "name" : "Platform",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90515,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "Platform",
+      "description" : "Default Config",
+      "enabled" : true,
+      "children" : [ ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90907,
+    "version" : 0,
+    "name" : "SIP Message Counts",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90907,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "SIP Message Counts",
+      "description" : "SIP Message Counts",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 454535,
+        "version" : 0,
+        "jmxCollectionId" : 90907,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "SIP",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "SIP Message Counts",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=SIP,name=*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "INFO",
+          "metricName" : "INFO",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "INVITE",
+          "metricName" : "INVITE",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "410 - Gone",
+          "metricName" : "410 - Gone",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "401 - Unauthorized",
+          "metricName" : "401 - Unauthorized",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "411 - Length Required",
+          "metricName" : "411 - Length Required",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "480 - Temporarily Not Available",
+          "metricName" : "480 - Temporarily Not Available",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "482 - Loop Detected",
+          "metricName" : "482 - Loop Detected",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "606 - Not Acceptable",
+          "metricName" : "606 - Not Acceptable",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "305 - Use Proxy",
+          "metricName" : "305 - Use Proxy",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "406 - Not Acceptable",
+          "metricName" : "406 - Not Acceptable",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "200 - Ok",
+          "metricName" : "200 - Ok",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "503 - Service Unavailable",
+          "metricName" : "503 - Service Unavailable",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "408 - Request Timeout",
+          "metricName" : "408 - Request Timeout",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "484 - Address Incomplete",
+          "metricName" : "484 - Address Incomplete",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "PRACK",
+          "metricName" : "PRACK",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "OPTIONS",
+          "metricName" : "OPTIONS",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "301 - Moved Permanently",
+          "metricName" : "301 - Moved Permanently",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "483 - Too Many Hops",
+          "metricName" : "483 - Too Many Hops",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "604 - Does Not Exist Anywhere",
+          "metricName" : "604 - Does Not Exist Anywhere",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "302 - Moved Temporarily",
+          "metricName" : "302 - Moved Temporarily",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "505 - SIP Version Not Supported",
+          "metricName" : "505 - SIP Version Not Supported",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "405 - Method Not Allowed",
+          "metricName" : "405 - Method Not Allowed",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "603 - Decline",
+          "metricName" : "603 - Decline",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "181 - Call Is Being Forwarded",
+          "metricName" : "181 - Call Is Being Forwarded",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "413 - Message Body Too Large",
+          "metricName" : "413 - Message Body Too Large",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "491 - Request Pending",
+          "metricName" : "491 - Request Pending",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "489 - Bad Event",
+          "metricName" : "489 - Bad Event",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "486 - Busy Here",
+          "metricName" : "486 - Busy Here",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "504 - Gateway Timeout",
+          "metricName" : "504 - Gateway Timeout",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "380 - Alternative Service",
+          "metricName" : "380 - Alternative Service",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "REFER",
+          "metricName" : "REFER",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "300 - Multiple Choices",
+          "metricName" : "300 - Multiple Choices",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "420 - Bad Extension",
+          "metricName" : "420 - Bad Extension",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "409 - Conflict",
+          "metricName" : "409 - Conflict",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "501 - Not Implemented",
+          "metricName" : "501 - Not Implemented",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "404 - Not Found",
+          "metricName" : "404 - Not Found",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "493 - Undecipherable",
+          "metricName" : "493 - Undecipherable",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "481 - Call Leg/Transaction Does Not Exist",
+          "metricName" : "481 - Call Leg/Transaction Does Not Exist",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "202 - Accepted",
+          "metricName" : "202 - Accepted",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "BYE",
+          "metricName" : "BYE",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "NOTIFY",
+          "metricName" : "NOTIFY",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "423 - Interval Too Brief",
+          "metricName" : "423 - Interval Too Brief",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "403 - Forbidden",
+          "metricName" : "403 - Forbidden",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "182 - Queued",
+          "metricName" : "182 - Queued",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "487 - Request Terminated",
+          "metricName" : "487 - Request Terminated",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "183 - Session Progress",
+          "metricName" : "183 - Session Progress",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "UPDATE",
+          "metricName" : "UPDATE",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "415 - Unsupported Media Type",
+          "metricName" : "415 - Unsupported Media Type",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "407 - Proxy Authentication Required",
+          "metricName" : "407 - Proxy Authentication Required",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "416 - Unsupported URI Scheme",
+          "metricName" : "416 - Unsupported URI Scheme",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "402 - Payment Required",
+          "metricName" : "402 - Payment Required",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "303 - See Other",
+          "metricName" : "303 - See Other",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "488 - Not Acceptable Here",
+          "metricName" : "488 - Not Acceptable Here",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "500 - Internal Server Error",
+          "metricName" : "500 - Internal Server Error",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "ACK",
+          "metricName" : "ACK",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "200_INVITE",
+          "metricName" : "200_INVITE",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "SUBSCRIBE",
+          "metricName" : "SUBSCRIBE",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "100 - Trying",
+          "metricName" : "100 - Trying",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "600 - Busy Everywhere",
+          "metricName" : "600 - Busy Everywhere",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "400 - Bad Request",
+          "metricName" : "400 - Bad Request",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "485 - Ambiguous",
+          "metricName" : "485 - Ambiguous",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "414 - Request URI Too Large",
+          "metricName" : "414 - Request URI Too Large",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "CANCEL",
+          "metricName" : "CANCEL",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "502 - Bad Gateway",
+          "metricName" : "502 - Bad Gateway",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        }, {
+          "mbeanAttributeName" : "180 - Ringing",
+          "metricName" : "180 - Ringing",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "SUM"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90908,
+    "version" : 0,
+    "name" : "SIP Metrics",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90908,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "SIP Metrics",
+      "description" : "SIP Metrics",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 454536,
+        "version" : 0,
+        "jmxCollectionId" : 90908,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Real Time Stats",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "IVR Metrics",
+        "mbeanQuery" : {
+          "domain" : "com.cisco.ccbu",
+          "mbeanPattern" : "com.cisco.ccbu:category=SIP,name=Real Time Statistics",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "INBOUND CALLS PER SECOND",
+          "metricName" : "INBOUND CALLS PER SECOND",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "TOTAL CALLS",
+          "metricName" : "TOTAL CALLS",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "VIDEO OFFERED",
+          "metricName" : "VIDEO OFFERED",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "GREETING CALLS",
+          "metricName" : "GREETING CALLS",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "WHISPER CALLS",
+          "metricName" : "WHISPER CALLS",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "OUTBOUND CALLS",
+          "metricName" : "OUTBOUND CALLS",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "RINGTONE CALLS",
+          "metricName" : "RINGTONE CALLS",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "VIDEO ANSWERED",
+          "metricName" : "VIDEO ANSWERED",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "INBOUND CALLS",
+          "metricName" : "INBOUND CALLS",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90516,
+    "version" : 0,
+    "name" : "Solr",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90516,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "Solr",
+      "description" : "Default Config",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 452562,
+        "version" : 0,
+        "jmxCollectionId" : 90516,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Solr_QueryResultCache",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "QueryResultCache",
+        "mbeanQuery" : {
+          "domain" : "solr",
+          "mbeanPattern" : "solr:id=org.apache.solr.search.LRUCache,type=queryResultCache",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "category",
+          "metricName" : "category",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "source",
+          "metricName" : "source",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "description",
+          "metricName" : "description",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "name",
+          "metricName" : "name",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "sourceId",
+          "metricName" : "sourceId",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "version",
+          "metricName" : "version",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "lookups",
+          "metricName" : "lookups",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "hits",
+          "metricName" : "hits",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "hitratio",
+          "metricName" : "hitratio",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "inserts",
+          "metricName" : "inserts",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "evictions",
+          "metricName" : "evictions",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "size",
+          "metricName" : "size",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "warmupTime",
+          "metricName" : "warmupTime",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "cumulative_lookups",
+          "metricName" : "cumulative_lookups",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "cumulative_hits",
+          "metricName" : "cumulative_hits",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "cumulative_hitratio",
+          "metricName" : "cumulative_hitratio",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "cumulative_inserts",
+          "metricName" : "cumulative_inserts",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "cumulative_evictions",
+          "metricName" : "cumulative_evictions",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90517,
+    "version" : 0,
+    "name" : "Tomcat",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90517,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "Tomcat",
+      "description" : "Default Config",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 452563,
+        "version" : 0,
+        "jmxCollectionId" : 90517,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Tomcat_GlobalRequestProcessor",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Web Container Runtime",
+        "mbeanQuery" : {
+          "domain" : "Catalina",
+          "mbeanPattern" : "Catalina:type=GlobalRequestProcessor,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "requestCount",
+          "metricName" : "Request Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "OBSERVATION_FOREVERINCREASING"
+        }, {
+          "mbeanAttributeName" : "errorCount",
+          "metricName" : "Error Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "SUM",
+          "metricClusterRollupType" : "COLLECTIVE",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452564,
+        "version" : 0,
+        "jmxCollectionId" : 90517,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Tomcat_HttpThreadPools",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Web Container Runtime",
+        "mbeanQuery" : {
+          "domain" : "Catalina",
+          "mbeanPattern" : "Catalina:type=ThreadPool,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : [ {
+            "name" : "name",
+            "value" : "http",
+            "queryExpressionType" : "QUERY_EXPRESION_TYPE_STARTS_WITH"
+          } ]
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "maxThreads",
+          "metricName" : "Maximum Threads",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "currentThreadsBusy",
+          "metricName" : "Busy Threads",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "currentThreadCount",
+          "metricName" : "Current Threads In Pool",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452565,
+        "version" : 0,
+        "jmxCollectionId" : 90517,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Tomcat_JDBCConnectionPools",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "JDBC Connection Pools",
+        "mbeanQuery" : {
+          "domain" : "Catalina",
+          "mbeanPattern" : "Catalina:type=DataSource,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "initialSize",
+          "metricName" : "Initial Pool Size",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "numActive",
+          "metricName" : "Active Connections",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "maxActive",
+          "metricName" : "Maximum Connections",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "maxTotal",
+          "metricName" : "Maximum Connections",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452566,
+        "version" : 0,
+        "jmxCollectionId" : 90517,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Tomcat_Sessions",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Sessions",
+        "mbeanQuery" : {
+          "domain" : "Catalina",
+          "mbeanPattern" : "Catalina:type=Manager,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "path",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "sessionMaxAliveTime",
+          "metricName" : "sessionMaxAliveTime",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "activeSessions",
+          "metricName" : "activeSessions",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "sessionCounter",
+          "metricName" : "sessionCounter",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "sessionAverageAliveTime",
+          "metricName" : "sessionAverageAliveTime",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "processingTime",
+          "metricName" : "processingTime",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "maxActive",
+          "metricName" : "maxActive",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "expiredSessions",
+          "metricName" : "expiredSessions",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "rejectedSessions",
+          "metricName" : "rejectedSessions",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90909,
+    "version" : 0,
+    "name" : "TotalNewCallsAgg",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90909,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "TotalNewCallsAgg",
+      "description" : "Total New Calls Aggregate",
+      "enabled" : true,
+      "children" : [ ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90518,
+    "version" : 0,
+    "name" : "WebLogic",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90518,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "WebLogic",
+      "description" : "Default Config",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 452567,
+        "version" : 0,
+        "jmxCollectionId" : 90518,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Weblogic_ServerRuntime",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Server Domain",
+        "mbeanQuery" : {
+          "domain" : "com.bea",
+          "mbeanPattern" : "com.bea:*,Type=ServerRuntime",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "Name",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "SocketsOpenedTotalCount",
+          "metricName" : "Total Open Sockets",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "OpenSocketsCurrentCount",
+          "metricName" : "Current Open Sockets",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452568,
+        "version" : 0,
+        "jmxCollectionId" : 90518,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Weblogic_WorkManagerRuntime",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Web Container Runtime",
+        "mbeanQuery" : {
+          "domain" : "com.bea",
+          "mbeanPattern" : "com.bea:*,Type=WorkManagerRuntime",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : [ {
+            "name" : "Name",
+            "value" : "weblogic.kernel.Default",
+            "queryExpressionType" : "QUERY_EXPRESION_TYPE_STARTS_WITH"
+          } ]
+        },
+        "instanceIdentifier" : "none",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "PendingRequests",
+          "metricName" : "Current Pending Requests",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "StuckThreadCount",
+          "metricName" : "Current Requests Stuck",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452569,
+        "version" : 0,
+        "jmxCollectionId" : 90518,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Weblogic_ThreadPoolRuntime",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Web Container Runtime",
+        "mbeanQuery" : {
+          "domain" : "com.bea",
+          "mbeanPattern" : "com.bea:*,Type=ThreadPoolRuntime",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "none",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "HoggingThreadCount",
+          "metricName" : "Threads Hogging CPU",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "Throughput",
+          "metricName" : "Current Throughput",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "ExecuteThreadIdleCount",
+          "metricName" : "Idle Thread Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "StandbyThreadCount",
+          "metricName" : "Standby Thread Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      }, {
+        "id" : 452570,
+        "version" : 0,
+        "jmxCollectionId" : 90518,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Weblogic_JDBCConnectionPools",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "JDBC Connection Pools",
+        "mbeanQuery" : {
+          "domain" : "com.bea",
+          "mbeanPattern" : "com.bea:*,Type=JDBCDataSourceRuntime",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "Name",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "ActiveConnectionsCurrentCount",
+          "metricName" : "Current Active Connections",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "CurrCapacity",
+          "metricName" : "Current Pool Size",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "MaxCapacity",
+          "metricName" : "Maximum Pool Size",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "NumAvailable",
+          "metricName" : "Available Connections",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "WaitingForConnectionCurrentCount",
+          "metricName" : "Threads Waiting For Connections",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "LeakedConnectionCount",
+          "metricName" : "Total Leaked Connections",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452571,
+        "version" : 0,
+        "jmxCollectionId" : 90518,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "Weblogic_JMSDEstinations",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "JMS Destinations",
+        "mbeanQuery" : {
+          "domain" : "com.bea",
+          "mbeanPattern" : "com.bea:*,Type=JMSDestinationRuntime",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : "Name",
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "MessagesCurrentCount",
+          "metricName" : "Current Message Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        }, {
+          "mbeanAttributeName" : "ConsumersCurrentCount",
+          "metricName" : "Current Consumer Count",
+          "getterChain" : null,
+          "metricTimeRollupType" : "AVERAGE",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "AVERAGE"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
+    "id" : 90519,
+    "version" : 0,
+    "name" : "WebSpherePMI",
+    "nameUnique" : true,
+    "config" : {
+      "id" : 90519,
+      "version" : 0,
+      "type" : "JMX_METRIC_RULE_COLLECTION",
+      "name" : "WebSpherePMI",
+      "description" : "Default Config",
+      "enabled" : true,
+      "children" : [ {
+        "id" : 452572,
+        "version" : 0,
+        "jmxCollectionId" : 90519,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "WebSpherePMI_ConnectionPools",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Connection Pools",
+        "mbeanQuery" : {
+          "domain" : "WebSpherePMI",
+          "mbeanPattern" : "WebSpherePMI:path0=connectionPoolModule,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "CreateCount",
+          "metricName" : "CreateCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "CloseCount",
+          "metricName" : "CloseCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "PoolSize",
+          "metricName" : "PoolSize",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "FreePoolSize",
+          "metricName" : "FreePoolSize",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "WaitingThreadCount",
+          "metricName" : "WaitingThreadCount",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "PercentUsed",
+          "metricName" : "PercentUsed",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "UseTime",
+          "metricName" : "UseTime",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        }, {
+          "mbeanAttributeName" : "WaitTime",
+          "metricName" : "WaitTime",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      }, {
+        "id" : 452573,
+        "version" : 0,
+        "jmxCollectionId" : 90519,
+        "type" : "JMX_METRIC_RULE",
+        "name" : "WebSpherePMI_ThreadPools",
+        "exclude" : false,
+        "enabled" : true,
+        "metricCategory" : "Thread Pools",
+        "mbeanQuery" : {
+          "domain" : "WebSpherePMI",
+          "mbeanPattern" : "WebSpherePMI:path0=threadPoolModule,*",
+          "queryLogicalOperator" : null,
+          "queryExpressions" : null
+        },
+        "instanceIdentifier" : null,
+        "attributeDefinitions" : [ {
+          "mbeanAttributeName" : "PoolSize",
+          "metricName" : "PoolSize",
+          "getterChain" : null,
+          "metricTimeRollupType" : "CURRENT",
+          "metricClusterRollupType" : "INDIVIDUAL",
+          "metricAggregatorType" : "OBSERVATION"
+        } ]
+      } ],
+      "applicationId" : 11393
+    },
+    "type" : "JMX_METRIC_RULE_COLLECTION"
+  } ] ] ],
+  "metatdata" : null
+}
