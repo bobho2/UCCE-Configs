@@ -1,42 +1,42 @@
 {
-  "controllerUrl" : "https://x.saas.appdynamics.com",
-  "applicationId" : 11393,
+  "controllerUrl" : "https://x.saas.appdynamics.com:443",
+  "applicationId" : 13372,
   "tierId" : null,
-  "user" : "bob.ho2@appdynamics.com",
-  "createdDate" : [ "java.util.Date", 1694627439446 ],
+  "user" : "x",
+  "createdDate" : [ "java.util.Date", 1706557590687 ],
   "entityType" : "jmx-rules",
   "entities" : [ "java.util.Arrays$ArrayList", [ [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90905,
+    "id" : 113766,
     "version" : 0,
     "name" : "Abnormal Disconnects",
     "nameUnique" : true,
     "config" : {
-      "id" : 90905,
+      "id" : 113766,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "Abnormal Disconnects",
       "description" : "Abnormal Disconnects",
       "enabled" : true,
       "children" : [ ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90509,
+    "id" : 113767,
     "version" : 0,
     "name" : "ActiveMQ",
     "nameUnique" : true,
     "config" : {
-      "id" : 90509,
+      "id" : 113767,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "ActiveMQ",
       "description" : "Default Config",
       "enabled" : true,
       "children" : [ {
-        "id" : 452537,
+        "id" : 568812,
         "version" : 0,
-        "jmxCollectionId" : 90509,
+        "jmxCollectionId" : 113767,
         "type" : "JMX_METRIC_RULE",
         "name" : "ActiveMQ_Brokers",
         "exclude" : false,
@@ -93,9 +93,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452538,
+        "id" : 568813,
         "version" : 0,
-        "jmxCollectionId" : 90509,
+        "jmxCollectionId" : 113767,
         "type" : "JMX_METRIC_RULE",
         "name" : "ActiveMQ_Queues",
         "exclude" : false,
@@ -159,9 +159,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452539,
+        "id" : 568814,
         "version" : 0,
-        "jmxCollectionId" : 90509,
+        "jmxCollectionId" : 113767,
         "type" : "JMX_METRIC_RULE",
         "name" : "ActiveMQ_Topics",
         "exclude" : false,
@@ -225,25 +225,25 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90510,
+    "id" : 113768,
     "version" : 0,
     "name" : "Cassandra",
     "nameUnique" : true,
     "config" : {
-      "id" : 90510,
+      "id" : 113768,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "Cassandra",
       "description" : "Default Config",
       "enabled" : true,
       "children" : [ {
-        "id" : 452540,
+        "id" : 568815,
         "version" : 0,
-        "jmxCollectionId" : 90510,
+        "jmxCollectionId" : 113768,
         "type" : "JMX_METRIC_RULE",
         "name" : "Cassandra_Caches",
         "exclude" : false,
@@ -293,9 +293,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452541,
+        "id" : 568816,
         "version" : 0,
-        "jmxCollectionId" : 90510,
+        "jmxCollectionId" : 113768,
         "type" : "JMX_METRIC_RULE",
         "name" : "Cassandra_GossipStage",
         "exclude" : false,
@@ -331,9 +331,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452542,
+        "id" : 568817,
         "version" : 0,
-        "jmxCollectionId" : 90510,
+        "jmxCollectionId" : 113768,
         "type" : "JMX_METRIC_RULE",
         "name" : "Cassandra_FailureDetector",
         "exclude" : false,
@@ -362,9 +362,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452543,
+        "id" : 568818,
         "version" : 0,
-        "jmxCollectionId" : 90510,
+        "jmxCollectionId" : 113768,
         "type" : "JMX_METRIC_RULE",
         "name" : "Cassandra_ReadStage",
         "exclude" : false,
@@ -407,9 +407,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452544,
+        "id" : 568819,
         "version" : 0,
-        "jmxCollectionId" : 90510,
+        "jmxCollectionId" : 113768,
         "type" : "JMX_METRIC_RULE",
         "name" : "Cassandra_CompactionManager",
         "exclude" : false,
@@ -438,9 +438,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452545,
+        "id" : 568820,
         "version" : 0,
-        "jmxCollectionId" : 90510,
+        "jmxCollectionId" : 113768,
         "type" : "JMX_METRIC_RULE",
         "name" : "Cassandra_StorageProxy",
         "exclude" : false,
@@ -476,25 +476,25 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90511,
+    "id" : 113769,
     "version" : 0,
     "name" : "Coherence",
     "nameUnique" : true,
     "config" : {
-      "id" : 90511,
+      "id" : 113769,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "Coherence",
       "description" : "Default Config",
       "enabled" : true,
       "children" : [ {
-        "id" : 452546,
+        "id" : 568821,
         "version" : 0,
-        "jmxCollectionId" : 90511,
+        "jmxCollectionId" : 113769,
         "type" : "JMX_METRIC_RULE",
         "name" : "Coherence_Caches",
         "exclude" : false,
@@ -670,9 +670,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452547,
+        "id" : 568822,
         "version" : 0,
-        "jmxCollectionId" : 90511,
+        "jmxCollectionId" : 113769,
         "type" : "JMX_METRIC_RULE",
         "name" : "Coherence_Cluster",
         "exclude" : false,
@@ -701,9 +701,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452548,
+        "id" : 568823,
         "version" : 0,
-        "jmxCollectionId" : 90511,
+        "jmxCollectionId" : 113769,
         "type" : "JMX_METRIC_RULE",
         "name" : "Coherence_Management",
         "exclude" : false,
@@ -732,9 +732,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452549,
+        "id" : 568824,
         "version" : 0,
-        "jmxCollectionId" : 90511,
+        "jmxCollectionId" : 113769,
         "type" : "JMX_METRIC_RULE",
         "name" : "Coherence_Reporter",
         "exclude" : false,
@@ -770,9 +770,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452550,
+        "id" : 568825,
         "version" : 0,
-        "jmxCollectionId" : 90511,
+        "jmxCollectionId" : 113769,
         "type" : "JMX_METRIC_RULE",
         "name" : "Coherence_Nodes",
         "exclude" : false,
@@ -836,9 +836,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452551,
+        "id" : 568826,
         "version" : 0,
-        "jmxCollectionId" : 90511,
+        "jmxCollectionId" : 113769,
         "type" : "JMX_METRIC_RULE",
         "name" : "Coherence_Services",
         "exclude" : false,
@@ -1014,9 +1014,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452552,
+        "id" : 568827,
         "version" : 0,
-        "jmxCollectionId" : 90511,
+        "jmxCollectionId" : 113769,
         "type" : "JMX_METRIC_RULE",
         "name" : "Coherence_StorageManager",
         "exclude" : false,
@@ -1066,25 +1066,25 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90906,
+    "id" : 113770,
     "version" : 0,
     "name" : "FinesseMetrics",
     "nameUnique" : true,
     "config" : {
-      "id" : 90906,
+      "id" : 113770,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "FinesseMetrics",
       "description" : "FinesseMetrics",
       "enabled" : true,
       "children" : [ {
-        "id" : 454517,
+        "id" : 568828,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "RequestLongestTime",
         "exclude" : false,
@@ -1106,9 +1106,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454518,
+        "id" : 568829,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "TasksQueued",
         "exclude" : false,
@@ -1130,9 +1130,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454519,
+        "id" : 568830,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "TotalCallsInSystem",
         "exclude" : false,
@@ -1154,9 +1154,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454520,
+        "id" : 568831,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "AverageProcessingTime",
         "exclude" : false,
@@ -1178,9 +1178,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454521,
+        "id" : 568832,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "RunnablesQueued",
         "exclude" : false,
@@ -1202,9 +1202,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454522,
+        "id" : 568833,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "NumOfActiveAgentsLoggedIn",
         "exclude" : false,
@@ -1226,9 +1226,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454523,
+        "id" : 568834,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "NumOfAgentsLoggedIn",
         "exclude" : false,
@@ -1250,9 +1250,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454524,
+        "id" : 568835,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "ThreadCount - Application Parameter",
         "exclude" : false,
@@ -1274,9 +1274,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454525,
+        "id" : 568836,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "PeakThreadCount - Application Parameter",
         "exclude" : false,
@@ -1298,9 +1298,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454526,
+        "id" : 568837,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "currentThreadCount",
         "exclude" : false,
@@ -1322,9 +1322,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454527,
+        "id" : 568838,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "currentThreadsBusy",
         "exclude" : false,
@@ -1346,9 +1346,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454528,
+        "id" : 568839,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "ProcessCpuLoad - Application Parameter",
         "exclude" : false,
@@ -1370,9 +1370,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454529,
+        "id" : 568840,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "ExecutingTaskCount",
         "exclude" : false,
@@ -1394,9 +1394,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454530,
+        "id" : 568841,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "QueuedTaskCount",
         "exclude" : false,
@@ -1418,9 +1418,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454531,
+        "id" : 568842,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "ThreadCount - Openfire Parameter",
         "exclude" : false,
@@ -1442,9 +1442,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454532,
+        "id" : 568843,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "PeakThreadCount - Openfire Parameter",
         "exclude" : false,
@@ -1466,9 +1466,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454533,
+        "id" : 568844,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "ProcessCpuLoad - Openfire Parameter",
         "exclude" : false,
@@ -1490,9 +1490,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 454534,
+        "id" : 568845,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "IntervalLoginOperations",
         "exclude" : false,
@@ -1514,9 +1514,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 523087,
+        "id" : 568846,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "DroppedCallsInterval",
         "exclude" : false,
@@ -1538,9 +1538,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 523088,
+        "id" : 568847,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "DroppedCallsTotal",
         "exclude" : false,
@@ -1562,9 +1562,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 523089,
+        "id" : 568848,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "ActiveCallsInterval",
         "exclude" : false,
@@ -1586,9 +1586,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 523090,
+        "id" : 568849,
         "version" : 0,
-        "jmxCollectionId" : 90906,
+        "jmxCollectionId" : 113770,
         "type" : "JMX_METRIC_RULE",
         "name" : "ActiveCallsTotal",
         "exclude" : false,
@@ -1610,25 +1610,25 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90512,
+    "id" : 113771,
     "version" : 0,
     "name" : "Glassfish",
     "nameUnique" : true,
     "config" : {
-      "id" : 90512,
+      "id" : 113771,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "Glassfish",
       "description" : "Default Config",
       "enabled" : true,
       "children" : [ {
-        "id" : 452553,
+        "id" : 568850,
         "version" : 0,
-        "jmxCollectionId" : 90512,
+        "jmxCollectionId" : 113771,
         "type" : "JMX_METRIC_RULE",
         "name" : "Glassfish_GlobalRequestProcessor",
         "exclude" : false,
@@ -1671,9 +1671,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452554,
+        "id" : 568851,
         "version" : 0,
-        "jmxCollectionId" : 90512,
+        "jmxCollectionId" : 113771,
         "type" : "JMX_METRIC_RULE",
         "name" : "Glassfish_AMX_WebRequest_Mon",
         "exclude" : false,
@@ -1702,9 +1702,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452555,
+        "id" : 568852,
         "version" : 0,
-        "jmxCollectionId" : 90512,
+        "jmxCollectionId" : 113771,
         "type" : "JMX_METRIC_RULE",
         "name" : "Glassfish_AMX_JDBCConnectionPool_Mon",
         "exclude" : false,
@@ -1747,25 +1747,25 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90513,
+    "id" : 113772,
     "version" : 0,
     "name" : "HornetQ",
     "nameUnique" : true,
     "config" : {
-      "id" : 90513,
+      "id" : 113772,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "HornetQ",
       "description" : "Default Config",
       "enabled" : true,
       "children" : [ {
-        "id" : 452556,
+        "id" : 568853,
         "version" : 0,
-        "jmxCollectionId" : 90513,
+        "jmxCollectionId" : 113772,
         "type" : "JMX_METRIC_RULE",
         "name" : "HornetQ_Queues",
         "exclude" : false,
@@ -1801,25 +1801,25 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90514,
+    "id" : 113773,
     "version" : 0,
     "name" : "JBoss",
     "nameUnique" : true,
     "config" : {
-      "id" : 90514,
+      "id" : 113773,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "JBoss",
       "description" : "Default Config",
       "enabled" : true,
       "children" : [ {
-        "id" : 452557,
+        "id" : 568854,
         "version" : 0,
-        "jmxCollectionId" : 90514,
+        "jmxCollectionId" : 113773,
         "type" : "JMX_METRIC_RULE",
         "name" : "JBoss_WebThreadPool",
         "exclude" : false,
@@ -1855,9 +1855,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452558,
+        "id" : 568855,
         "version" : 0,
-        "jmxCollectionId" : 90514,
+        "jmxCollectionId" : 113773,
         "type" : "JMX_METRIC_RULE",
         "name" : "JBoss_GlobalRequestProcessor",
         "exclude" : false,
@@ -1886,9 +1886,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452559,
+        "id" : 568856,
         "version" : 0,
-        "jmxCollectionId" : 90514,
+        "jmxCollectionId" : 113773,
         "type" : "JMX_METRIC_RULE",
         "name" : "JBoss_JDBCConnectionPools",
         "exclude" : false,
@@ -1924,9 +1924,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452560,
+        "id" : 568857,
         "version" : 0,
-        "jmxCollectionId" : 90514,
+        "jmxCollectionId" : 113773,
         "type" : "JMX_METRIC_RULE",
         "name" : "JBoss_Sessions",
         "exclude" : false,
@@ -1997,9 +1997,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452561,
+        "id" : 568858,
         "version" : 0,
-        "jmxCollectionId" : 90514,
+        "jmxCollectionId" : 113773,
         "type" : "JMX_METRIC_RULE",
         "name" : "JBoss_EJBPools",
         "exclude" : false,
@@ -2028,25 +2028,25 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90520,
+    "id" : 113774,
     "version" : 0,
     "name" : "Kafka",
     "nameUnique" : true,
     "config" : {
-      "id" : 90520,
+      "id" : 113774,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "Kafka",
       "description" : "Default Config",
       "enabled" : true,
       "children" : [ {
-        "id" : 452574,
+        "id" : 568859,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "Kafka_Producer",
         "exclude" : false,
@@ -2124,9 +2124,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452575,
+        "id" : 568860,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "Kafka_Consumer",
         "exclude" : false,
@@ -2176,9 +2176,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452576,
+        "id" : 568861,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_IsrExpandRate",
         "exclude" : false,
@@ -2228,9 +2228,9 @@
           "metricAggregatorType" : "SUM"
         } ]
       }, {
-        "id" : 452577,
+        "id" : 568862,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_IsrShrinkRate",
         "exclude" : false,
@@ -2280,9 +2280,9 @@
           "metricAggregatorType" : "SUM"
         } ]
       }, {
-        "id" : 452578,
+        "id" : 568863,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_UnderReplicatedPartitions",
         "exclude" : false,
@@ -2304,9 +2304,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452579,
+        "id" : 568864,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_PartitionsCount",
         "exclude" : false,
@@ -2328,9 +2328,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452580,
+        "id" : 568865,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_LeadersCount",
         "exclude" : false,
@@ -2352,9 +2352,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452581,
+        "id" : 568866,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_ActiveControllers",
         "exclude" : false,
@@ -2376,9 +2376,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452582,
+        "id" : 568867,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_OfflinePartitions",
         "exclude" : false,
@@ -2400,9 +2400,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452583,
+        "id" : 568868,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_LeaderElectionRateAndTime",
         "exclude" : false,
@@ -2438,9 +2438,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452584,
+        "id" : 568869,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_UncleanLeaderElectionRate",
         "exclude" : false,
@@ -2476,9 +2476,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452585,
+        "id" : 568870,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_BytesInPerSec",
         "exclude" : false,
@@ -2528,9 +2528,9 @@
           "metricAggregatorType" : "SUM"
         } ]
       }, {
-        "id" : 452586,
+        "id" : 568871,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_BytesOutPerSec",
         "exclude" : false,
@@ -2580,9 +2580,9 @@
           "metricAggregatorType" : "SUM"
         } ]
       }, {
-        "id" : 452587,
+        "id" : 568872,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_TotalRequestTimeMS",
         "exclude" : false,
@@ -2604,9 +2604,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452588,
+        "id" : 568873,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_RequestWaitTimeInQueueMS",
         "exclude" : false,
@@ -2628,9 +2628,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452589,
+        "id" : 568874,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_RequestTimeSpentInProcessingMS",
         "exclude" : false,
@@ -2652,9 +2652,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452590,
+        "id" : 568875,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_RequestWaitTimeForFollowerMS",
         "exclude" : false,
@@ -2676,9 +2676,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452591,
+        "id" : 568876,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_TimeSpentInResponseQueueMS",
         "exclude" : false,
@@ -2700,9 +2700,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452592,
+        "id" : 568877,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_TimeSpentInSendingResponseMS",
         "exclude" : false,
@@ -2724,9 +2724,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452593,
+        "id" : 568878,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_MaxLagBetweenLeaderAndFollower",
         "exclude" : false,
@@ -2748,9 +2748,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452594,
+        "id" : 568879,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_PercentageTimeNetworkProcessorIdle",
         "exclude" : false,
@@ -2772,9 +2772,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452595,
+        "id" : 568880,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_PercentageTimeRequestHandlerIdle",
         "exclude" : false,
@@ -2803,9 +2803,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452596,
+        "id" : 568881,
         "version" : 0,
-        "jmxCollectionId" : 90520,
+        "jmxCollectionId" : 113774,
         "type" : "JMX_METRIC_RULE",
         "name" : "KafkaBroker_ProcessorIdlePercent",
         "exclude" : false,
@@ -2827,41 +2827,41 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90515,
+    "id" : 113775,
     "version" : 0,
     "name" : "Platform",
     "nameUnique" : true,
     "config" : {
-      "id" : 90515,
+      "id" : 113775,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "Platform",
       "description" : "Default Config",
       "enabled" : true,
       "children" : [ ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90907,
+    "id" : 113776,
     "version" : 0,
     "name" : "SIP Message Counts",
     "nameUnique" : true,
     "config" : {
-      "id" : 90907,
+      "id" : 113776,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "SIP Message Counts",
       "description" : "SIP Message Counts",
       "enabled" : true,
       "children" : [ {
-        "id" : 454535,
+        "id" : 568882,
         "version" : 0,
-        "jmxCollectionId" : 90907,
+        "jmxCollectionId" : 113776,
         "type" : "JMX_METRIC_RULE",
         "name" : "SIP",
         "exclude" : false,
@@ -3331,25 +3331,25 @@
           "metricAggregatorType" : "SUM"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90908,
+    "id" : 113777,
     "version" : 0,
     "name" : "SIP Metrics",
     "nameUnique" : true,
     "config" : {
-      "id" : 90908,
+      "id" : 113777,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "SIP Metrics",
       "description" : "SIP Metrics",
       "enabled" : true,
       "children" : [ {
-        "id" : 454536,
+        "id" : 568883,
         "version" : 0,
-        "jmxCollectionId" : 90908,
+        "jmxCollectionId" : 113777,
         "type" : "JMX_METRIC_RULE",
         "name" : "Real Time Stats",
         "exclude" : false,
@@ -3427,25 +3427,25 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90516,
+    "id" : 113778,
     "version" : 0,
     "name" : "Solr",
     "nameUnique" : true,
     "config" : {
-      "id" : 90516,
+      "id" : 113778,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "Solr",
       "description" : "Default Config",
       "enabled" : true,
       "children" : [ {
-        "id" : 452562,
+        "id" : 568884,
         "version" : 0,
-        "jmxCollectionId" : 90516,
+        "jmxCollectionId" : 113778,
         "type" : "JMX_METRIC_RULE",
         "name" : "Solr_QueryResultCache",
         "exclude" : false,
@@ -3586,25 +3586,25 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90517,
+    "id" : 113779,
     "version" : 0,
     "name" : "Tomcat",
     "nameUnique" : true,
     "config" : {
-      "id" : 90517,
+      "id" : 113779,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "Tomcat",
       "description" : "Default Config",
       "enabled" : true,
       "children" : [ {
-        "id" : 452563,
+        "id" : 568885,
         "version" : 0,
-        "jmxCollectionId" : 90517,
+        "jmxCollectionId" : 113779,
         "type" : "JMX_METRIC_RULE",
         "name" : "Tomcat_GlobalRequestProcessor",
         "exclude" : false,
@@ -3633,9 +3633,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452564,
+        "id" : 568886,
         "version" : 0,
-        "jmxCollectionId" : 90517,
+        "jmxCollectionId" : 113779,
         "type" : "JMX_METRIC_RULE",
         "name" : "Tomcat_HttpThreadPools",
         "exclude" : false,
@@ -3675,9 +3675,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452565,
+        "id" : 568887,
         "version" : 0,
-        "jmxCollectionId" : 90517,
+        "jmxCollectionId" : 113779,
         "type" : "JMX_METRIC_RULE",
         "name" : "Tomcat_JDBCConnectionPools",
         "exclude" : false,
@@ -3720,9 +3720,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452566,
+        "id" : 568888,
         "version" : 0,
-        "jmxCollectionId" : 90517,
+        "jmxCollectionId" : 113779,
         "type" : "JMX_METRIC_RULE",
         "name" : "Tomcat_Sessions",
         "exclude" : false,
@@ -3793,41 +3793,41 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90909,
+    "id" : 113780,
     "version" : 0,
     "name" : "TotalNewCallsAgg",
     "nameUnique" : true,
     "config" : {
-      "id" : 90909,
+      "id" : 113780,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "TotalNewCallsAgg",
       "description" : "Total New Calls Aggregate",
       "enabled" : true,
       "children" : [ ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90518,
+    "id" : 113781,
     "version" : 0,
     "name" : "WebLogic",
     "nameUnique" : true,
     "config" : {
-      "id" : 90518,
+      "id" : 113781,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "WebLogic",
       "description" : "Default Config",
       "enabled" : true,
       "children" : [ {
-        "id" : 452567,
+        "id" : 568889,
         "version" : 0,
-        "jmxCollectionId" : 90518,
+        "jmxCollectionId" : 113781,
         "type" : "JMX_METRIC_RULE",
         "name" : "Weblogic_ServerRuntime",
         "exclude" : false,
@@ -3856,9 +3856,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452568,
+        "id" : 568890,
         "version" : 0,
-        "jmxCollectionId" : 90518,
+        "jmxCollectionId" : 113781,
         "type" : "JMX_METRIC_RULE",
         "name" : "Weblogic_WorkManagerRuntime",
         "exclude" : false,
@@ -3891,9 +3891,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452569,
+        "id" : 568891,
         "version" : 0,
-        "jmxCollectionId" : 90518,
+        "jmxCollectionId" : 113781,
         "type" : "JMX_METRIC_RULE",
         "name" : "Weblogic_ThreadPoolRuntime",
         "exclude" : false,
@@ -3936,9 +3936,9 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       }, {
-        "id" : 452570,
+        "id" : 568892,
         "version" : 0,
-        "jmxCollectionId" : 90518,
+        "jmxCollectionId" : 113781,
         "type" : "JMX_METRIC_RULE",
         "name" : "Weblogic_JDBCConnectionPools",
         "exclude" : false,
@@ -3995,9 +3995,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452571,
+        "id" : 568893,
         "version" : 0,
-        "jmxCollectionId" : 90518,
+        "jmxCollectionId" : 113781,
         "type" : "JMX_METRIC_RULE",
         "name" : "Weblogic_JMSDEstinations",
         "exclude" : false,
@@ -4026,25 +4026,25 @@
           "metricAggregatorType" : "AVERAGE"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ], [ "com.appdynamics.tools.vo.jmx.JmxRuleCollectionWrapper", {
-    "id" : 90519,
+    "id" : 113782,
     "version" : 0,
     "name" : "WebSpherePMI",
     "nameUnique" : true,
     "config" : {
-      "id" : 90519,
+      "id" : 113782,
       "version" : 0,
       "type" : "JMX_METRIC_RULE_COLLECTION",
       "name" : "WebSpherePMI",
       "description" : "Default Config",
       "enabled" : true,
       "children" : [ {
-        "id" : 452572,
+        "id" : 568894,
         "version" : 0,
-        "jmxCollectionId" : 90519,
+        "jmxCollectionId" : 113782,
         "type" : "JMX_METRIC_RULE",
         "name" : "WebSpherePMI_ConnectionPools",
         "exclude" : false,
@@ -4115,9 +4115,9 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       }, {
-        "id" : 452573,
+        "id" : 568895,
         "version" : 0,
-        "jmxCollectionId" : 90519,
+        "jmxCollectionId" : 113782,
         "type" : "JMX_METRIC_RULE",
         "name" : "WebSpherePMI_ThreadPools",
         "exclude" : false,
@@ -4139,7 +4139,7 @@
           "metricAggregatorType" : "OBSERVATION"
         } ]
       } ],
-      "applicationId" : 11393
+      "applicationId" : 13372
     },
     "type" : "JMX_METRIC_RULE_COLLECTION"
   } ] ] ],

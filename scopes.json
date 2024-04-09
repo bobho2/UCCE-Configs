@@ -1,0 +1,73 @@
+{
+  "controllerUrl" : "https://x.saas.appdynamics.com:443",
+  "applicationId" : 13372,
+  "tierId" : null,
+  "user" : "x@appdynamics.com",
+  "createdDate" : [ "java.util.Date", 1706557596555 ],
+  "entityType" : "scopes",
+  "entities" : [ "java.util.Arrays$ArrayList", [ [ "com.appdynamics.tools.vo.config.MdsScopeWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "PG",
+    "nameUnique" : true,
+    "jsonStr$$" : "{\"type\": \"SELECTED_TIERS\",\"summary\": {\"id\": \"0d3e2fb0-c860-4149-a8e2-e6b74030bcb7\",\"type\": \"com.appdynamics.platform.services.configuration.impl.persistenceapi.model.ConfigScopeEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"PG\",\"description\": \"\",\"createdOn\": 1700348328298,\"updatedOn\": 1700348341094},\"includedTiers\": [{\"id\": \"1f4a5411-229b-4416-9f00-6a425a20f7c3\",\"type\": \"com.appdynamics.modules.apm.topology.impl.persistenceapi.model.TierEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"CCEJGW\"}],\"version\": 1}",
+    "idStr" : "0d3e2fb0-c860-4149-a8e2-e6b74030bcb7"
+  } ], [ "com.appdynamics.tools.vo.config.MdsScopeWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "Live Data",
+    "nameUnique" : true,
+    "jsonStr$$" : "{\"type\": \"SELECTED_TIERS\",\"summary\": {\"id\": \"0e8c2f54-f924-4c1b-929f-5cca3229505b\",\"type\": \"com.appdynamics.platform.services.configuration.impl.persistenceapi.model.ConfigScopeEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"Live Data\",\"description\": \"\",\"createdOn\": 1700182105357,\"updatedOn\": 1700182105357},\"includedTiers\": [{\"id\": \"ff054767-ced8-4072-8b28-bae5fd43c73d\",\"type\": \"com.appdynamics.modules.apm.topology.impl.persistenceapi.model.TierEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"LiveData-Worker\"},{\"id\": \"3b495205-8cdb-49af-9fb2-e4223d67eba5\",\"type\": \"com.appdynamics.modules.apm.topology.impl.persistenceapi.model.TierEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"LiveData-ActiveMQ\"},{\"id\": \"fa14d712-0add-4b5c-9201-b3b6192f5752\",\"type\": \"com.appdynamics.modules.apm.topology.impl.persistenceapi.model.TierEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"LiveData-SocketIO\"}],\"version\": 0}",
+    "idStr" : "0e8c2f54-f924-4c1b-929f-5cca3229505b"
+  } ], [ "com.appdynamics.tools.vo.config.MdsScopeWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "VVB",
+    "nameUnique" : true,
+    "jsonStr$$" : "{\"type\": \"SELECTED_TIERS\",\"summary\": {\"id\": \"2a664300-e67c-44ad-8963-991e43df49c9\",\"type\": \"com.appdynamics.platform.services.configuration.impl.persistenceapi.model.ConfigScopeEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"VVB\",\"description\": \"\",\"createdOn\": 1700342905801,\"updatedOn\": 1700342905801},\"includedTiers\": [{\"id\": \"032d7c95-dfd5-4333-84c6-a305ff438834\",\"type\": \"com.appdynamics.modules.apm.topology.impl.persistenceapi.model.TierEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"VVB-Engine\"}],\"version\": 0}",
+    "idStr" : "2a664300-e67c-44ad-8963-991e43df49c9"
+  } ], [ "com.appdynamics.tools.vo.config.MdsScopeWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "All But Call Server",
+    "nameUnique" : true,
+    "jsonStr$$" : "{\"type\": \"ALL_TIERS_IN_APP_EXCEPT\",\"summary\": {\"id\": \"554f70f9-58ea-4530-bb6c-9c07bf5b4aff\",\"type\": \"com.appdynamics.platform.services.configuration.impl.persistenceapi.model.ConfigScopeEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"All But Call Server\",\"description\": \"\",\"createdOn\": 1700512666431,\"updatedOn\": 1700512666431},\"excludedTiers\": [{\"id\": \"40a722bd-57d2-4be4-9e02-7147c8de019e\",\"type\": \"com.appdynamics.modules.apm.topology.impl.persistenceapi.model.TierEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"CallServer\"}],\"version\": 0}",
+    "idStr" : "554f70f9-58ea-4530-bb6c-9c07bf5b4aff"
+  } ], [ "com.appdynamics.tools.vo.config.MdsScopeWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "CallServer",
+    "nameUnique" : true,
+    "jsonStr$$" : "{\"type\": \"SELECTED_TIERS\",\"summary\": {\"id\": \"6b3043bd-51e3-4587-a012-4608ae0f5ddd\",\"type\": \"com.appdynamics.platform.services.configuration.impl.persistenceapi.model.ConfigScopeEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"CallServer\",\"description\": \"\",\"createdOn\": 1700494130860,\"updatedOn\": 1700512746979},\"includedTiers\": [{\"id\": \"40a722bd-57d2-4be4-9e02-7147c8de019e\",\"type\": \"com.appdynamics.modules.apm.topology.impl.persistenceapi.model.TierEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"CallServer\"}],\"version\": 5}",
+    "idStr" : "6b3043bd-51e3-4587-a012-4608ae0f5ddd"
+  } ], [ "com.appdynamics.tools.vo.config.MdsScopeWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "Default Scope",
+    "nameUnique" : true,
+    "jsonStr$$" : "{\"type\": \"ALL_TIERS_IN_APP\",\"summary\": {\"id\": \"760b0932-29f3-425e-8fc9-38cb379fbf5b\",\"type\": \"com.appdynamics.platform.services.configuration.impl.persistenceapi.model.ConfigScopeEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"Default Scope\",\"description\": \"\",\"createdOn\": 1699547672483,\"updatedOn\": 1699547672483},\"version\": 0}",
+    "idStr" : "760b0932-29f3-425e-8fc9-38cb379fbf5b"
+  } ], [ "com.appdynamics.tools.vo.config.MdsScopeWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "VXMLServer",
+    "nameUnique" : true,
+    "jsonStr$$" : "{\"type\": \"SELECTED_TIERS\",\"summary\": {\"id\": \"b3d13948-0a8e-4c2b-b1e6-efc06446c5fd\",\"type\": \"com.appdynamics.platform.services.configuration.impl.persistenceapi.model.ConfigScopeEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"VXMLServer\",\"description\": \"\",\"createdOn\": 1700496073424,\"updatedOn\": 1700496073424},\"includedTiers\": [{\"id\": \"ff66140d-0ea8-4419-bf15-ec5ed98344ef\",\"type\": \"com.appdynamics.modules.apm.topology.impl.persistenceapi.model.TierEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"VXMLServer\"}],\"version\": 0}",
+    "idStr" : "b3d13948-0a8e-4c2b-b1e6-efc06446c5fd"
+  } ], [ "com.appdynamics.tools.vo.config.MdsScopeWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "CCEAdmin",
+    "nameUnique" : true,
+    "jsonStr$$" : "{\"type\": \"SELECTED_TIERS\",\"summary\": {\"id\": \"bb43cb3a-5fbb-4d08-8041-3bb2d6b0cfaf\",\"type\": \"com.appdynamics.platform.services.configuration.impl.persistenceapi.model.ConfigScopeEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"CCEAdmin\",\"description\": \"\",\"createdOn\": 1700348647486,\"updatedOn\": 1700349393869},\"includedTiers\": [{\"id\": \"269639d2-894f-4fad-a2cf-8d6a7e414c98\",\"type\": \"com.appdynamics.modules.apm.topology.impl.persistenceapi.model.TierEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"CCEAdmin\"}],\"version\": 2}",
+    "idStr" : "bb43cb3a-5fbb-4d08-8041-3bb2d6b0cfaf"
+  } ], [ "com.appdynamics.tools.vo.config.MdsScopeWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "Finesse Desktop",
+    "nameUnique" : true,
+    "jsonStr$$" : "{\"type\": \"SELECTED_TIERS\",\"summary\": {\"id\": \"efaa8fe3-89a7-4332-836c-0475ca324d29\",\"type\": \"com.appdynamics.platform.services.configuration.impl.persistenceapi.model.ConfigScopeEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"Finesse Desktop\",\"description\": \"\",\"createdOn\": 1700876568788,\"updatedOn\": 1700876568788},\"includedTiers\": [{\"id\": \"546e0a6b-f8fe-4d37-be88-9096042ace96\",\"type\": \"com.appdynamics.modules.apm.topology.impl.persistenceapi.model.TierEntity\",\"accountId\": \"c42741ab-8148-4247-9075-a39e331d0a4d\",\"name\": \"Finesse-Desktop\"}],\"version\": 0}",
+    "idStr" : "efaa8fe3-89a7-4332-836c-0475ca324d29"
+  } ] ] ],
+  "metatdata" : null
+}
