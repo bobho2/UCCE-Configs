@@ -1,0 +1,190 @@
+{
+  "controllerUrl" : "https://x.saas.appdynamics.com",
+  "applicationId" : 885,
+  "tierId" : null,
+  "user" : "bob.ho2@appdynamics.com",
+  "createdDate" : [ "java.util.Date", 1723227666139 ],
+  "entityType" : "analytics-metrics",
+  "entities" : [ "java.util.Arrays$ArrayList", [ [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "UCCE - Abnormal User Experience (ALL) - Count",
+    "nameUnique" : true,
+    "idStr" : "UCCE - Abnormal User Experience (ALL) - Count",
+    "entity" : [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryRequest2", {
+      "globalAccountName" : null,
+      "queryName" : "UCCE - Abnormal User Experience (ALL) - Count",
+      "queryDescription" : null,
+      "createdBy" : "Bob Ho",
+      "enabled" : true,
+      "eventType" : "biz_txn_v1",
+      "queryType" : "ADQL_QUERY",
+      "rawQueryString" : null,
+      "adqlQueryString" : "SELECT count(*) FROM transactions WHERE userExperience != \"NORMAL\"",
+      "stallDurationInSeconds" : null,
+      "hidden" : false,
+      "newQueryName" : null
+    } ]
+  } ], [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "UCCE - Audio Call - Count",
+    "nameUnique" : true,
+    "idStr" : "UCCE - Audio Call - Count",
+    "entity" : [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryRequest2", {
+      "globalAccountName" : null,
+      "queryName" : "UCCE - Audio Call - Count",
+      "queryDescription" : null,
+      "createdBy" : "Bob Ho",
+      "enabled" : true,
+      "eventType" : "biz_txn_v1",
+      "queryType" : "ADQL_QUERY",
+      "rawQueryString" : null,
+      "adqlQueryString" : "SELECT count(*) FROM transactions WHERE segments.userData.IsAudioCall = true",
+      "stallDurationInSeconds" : null,
+      "hidden" : false,
+      "newQueryName" : null
+    } ]
+  } ], [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "UCCE - Audio File Errors - Count",
+    "nameUnique" : true,
+    "idStr" : "UCCE - Audio File Errors - Count",
+    "entity" : [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryRequest2", {
+      "globalAccountName" : null,
+      "queryName" : "UCCE - Audio File Errors - Count",
+      "queryDescription" : null,
+      "createdBy" : "Bob Ho",
+      "enabled" : true,
+      "eventType" : "biz_txn_v1",
+      "queryType" : "ADQL_QUERY",
+      "rawQueryString" : null,
+      "adqlQueryString" : "SELECT count(*) FROM transactions WHERE segments.errorList.errorDetail LIKE \"*wav*\"",
+      "stallDurationInSeconds" : null,
+      "hidden" : false,
+      "newQueryName" : null
+    } ]
+  } ], [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "UCCE - Call Drops - Count",
+    "nameUnique" : true,
+    "idStr" : "UCCE - Call Drops - Count",
+    "entity" : [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryRequest2", {
+      "globalAccountName" : null,
+      "queryName" : "UCCE - Call Drops - Count",
+      "queryDescription" : null,
+      "createdBy" : "Bob Ho",
+      "enabled" : true,
+      "eventType" : "biz_txn_v1",
+      "queryType" : "ADQL_QUERY",
+      "rawQueryString" : null,
+      "adqlQueryString" : "SELECT count(*) FROM transactions WHERE (segments.userData.IsCallDrop != false and segments.userData.IsCallDrop IS NOT NULL)",
+      "stallDurationInSeconds" : null,
+      "hidden" : false,
+      "newQueryName" : null
+    } ]
+  } ], [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "UCCE - Call_New - Count",
+    "nameUnique" : true,
+    "idStr" : "UCCE - Call_New - Count",
+    "entity" : [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryRequest2", {
+      "globalAccountName" : null,
+      "queryName" : "UCCE - Call_New - Count",
+      "queryDescription" : null,
+      "createdBy" : "Bob Ho",
+      "enabled" : true,
+      "eventType" : "biz_txn_v1",
+      "queryType" : "ADQL_QUERY",
+      "rawQueryString" : null,
+      "adqlQueryString" : "SELECT count(*) FROM transactions WHERE segments.httpData.parameters.MSG_TYPE = \"CALL_NEW\"",
+      "stallDurationInSeconds" : null,
+      "hidden" : false,
+      "newQueryName" : null
+    } ]
+  } ], [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "UCCE - Call_Result - Count",
+    "nameUnique" : true,
+    "idStr" : "UCCE - Call_Result - Count",
+    "entity" : [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryRequest2", {
+      "globalAccountName" : null,
+      "queryName" : "UCCE - Call_Result - Count",
+      "queryDescription" : null,
+      "createdBy" : "Bob Ho",
+      "enabled" : true,
+      "eventType" : "biz_txn_v1",
+      "queryType" : "ADQL_QUERY",
+      "rawQueryString" : null,
+      "adqlQueryString" : "SELECT count(*) FROM transactions WHERE segments.httpData.parameters.MSG_TYPE = \"CALL_RESULT\"",
+      "stallDurationInSeconds" : null,
+      "hidden" : false,
+      "newQueryName" : null
+    } ]
+  } ], [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "UCCE - Calls by ANI - Count",
+    "nameUnique" : true,
+    "idStr" : "UCCE - Calls by ANI - Count",
+    "entity" : [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryRequest2", {
+      "globalAccountName" : null,
+      "queryName" : "UCCE - Calls by ANI - Count",
+      "queryDescription" : null,
+      "createdBy" : "Bob Ho",
+      "enabled" : true,
+      "eventType" : "biz_txn_v1",
+      "queryType" : "ADQL_QUERY",
+      "rawQueryString" : null,
+      "adqlQueryString" : "SELECT count(segments.httpData.parameters.CALL_ANI) FROM transactions",
+      "stallDurationInSeconds" : null,
+      "hidden" : false,
+      "newQueryName" : null
+    } ]
+  } ], [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "UCCE - Error (ANI) - Count",
+    "nameUnique" : true,
+    "idStr" : "UCCE - Error (ANI) - Count",
+    "entity" : [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryRequest2", {
+      "globalAccountName" : null,
+      "queryName" : "UCCE - Error (ANI) - Count",
+      "queryDescription" : null,
+      "createdBy" : "Bob Ho",
+      "enabled" : true,
+      "eventType" : "biz_txn_v1",
+      "queryType" : "ADQL_QUERY",
+      "rawQueryString" : null,
+      "adqlQueryString" : "SELECT count(*) FROM transactions WHERE (segments.userData.ANI is NOT NULL and userExperience = \"ERROR\")",
+      "stallDurationInSeconds" : null,
+      "hidden" : false,
+      "newQueryName" : null
+    } ]
+  } ], [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryWrapper", {
+    "id" : 0,
+    "version" : 0,
+    "name" : "UCCE - Video Call - Count",
+    "nameUnique" : true,
+    "idStr" : "UCCE - Video Call - Count",
+    "entity" : [ "com.appdynamics.tools.domain.analytics.AnalyticsScheduledQueryRequest2", {
+      "globalAccountName" : null,
+      "queryName" : "UCCE - Video Call - Count",
+      "queryDescription" : null,
+      "createdBy" : "Bob Ho",
+      "enabled" : true,
+      "eventType" : "biz_txn_v1",
+      "queryType" : "ADQL_QUERY",
+      "rawQueryString" : null,
+      "adqlQueryString" : "SELECT count(*) FROM transactions WHERE segments.userData.IsVideoCall = true",
+      "stallDurationInSeconds" : null,
+      "hidden" : false,
+      "newQueryName" : null
+    } ]
+  } ] ] ],
+  "metatdata" : null
+}
